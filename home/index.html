@@ -5,25 +5,26 @@
 
     <title>Homes &middot; Jayanti</title>
     
-    <meta name="author" content="Just Move Limited">
+    <meta name="author" content="Jaynati Hong Kong">
      
     
     <meta name="description" content="全手工製作、百分百天然的非一般產品">
     
-    <link rel="image_src" href="/img/home/logo.png">
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://jayanti.justmove.hk/%20css/screen.css%20">
-    <link rel="stylesheet" href="https://jayanti.justmove.hk/%20css/github.css%20">
+    
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css"> 
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700&amp;subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Martel:300,400,700,800" rel="stylesheet" />
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
@@ -86,7 +87,7 @@
           
             <li class="nav-item active">
                 
-                <a href="https://justore.jayantihk.com/" class="nav-link" id="menu-product">
+                <a href="https://justore.jayantihk.com/#/" class="nav-link" id="menu-product">
                     
                         產品介紹
                     
@@ -106,9 +107,9 @@
           
             <li class="nav-item active">
                 
-                <a href="/promotions" class="nav-link" id="menu-promotions">
+                <a href="https://www.jayanti.com/" class="nav-link" id="menu-en">
                     
-                        最新優惠
+                        English
                     
                 </a>
                 
@@ -154,30 +155,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md">
-                <a href="" class="black">
-                    <div class="element text-center fader">
-                        
-                            
-                                
-                                <img src="/uploads/fb-2019-01-14_1.jpg" width="100%" height="auto" style="display: block;"/>
-                                
-                            
-                                
-                                <img src="/uploads/fb-2019-01-10.jpg" width="100%" height="auto"/>
-                                
-                            
-                                
-                                <img src="/uploads/fb-2019-01-03.jpg" width="100%" height="auto"/>
-                                
-                            
-                        
-                        <span class="title">
-                            
-                        </span>
-                    </div>
-                </a>
-            </div>
+            
             <div class="col-md">
                 <a href="" class="black">
                     <div class="element text-center">
@@ -191,16 +169,11 @@
         </div>
     </div>
     <section class="instgram-container">
-        <div class="text-center padding-top-25">
+        <div class="text-center">
             <b class="font-20">
-                <i class="fa fa-instagram font-20"></i>#JAYANTI.ORGANIC ON INSTAGRAM <br>
+                #JAYANTI.ORGANIC ON INSTAGRAM <br>
             </b>
-            <div>
-                各款天然有機產品 由意大利直送香港
-            </div>
-            
-            <div id="instgram-followers">
-            </div>
+            各款天然有機產品 由意大利直送香港
         </div>
         <div class="item-container">
             <div class="responsive row" id="instgram-photo">
@@ -221,7 +194,7 @@
     
     function initCarousel() {
         instgramItems.forEach(item =>
-            $('#instgram-photo').append("<div class='item'><a target='_blank' href='" + item.url + "'><img width='100%' height='auto' src='" + item.photoUrl + "'></a><div class='likesCount text-left'><i class='fa fa-heart-o black font-15'></i><span class='black'>" + item.likes + "</span></div></div>")
+            $('#instgram-photo').append("<div class='item'><a target='_blank' href='" + item.url + "'><img width='100%' height='auto' src='" + item.photoUrl + "'></a></div>")
         );
         $('.responsive').slick({
             dots: true,
@@ -263,9 +236,8 @@
     
     var token = '7569874127.df24bc9.dc4d32699019445e8cdf744cc87db4b1',
         instgramItems = [],
-        num_photos = 20,
-        followers;
-    
+        num_photos = 20;
+
     $.ajax({
         url: 'https://api.instagram.com/v1/users/self/media/recent',
         dataType: 'jsonp',
@@ -277,27 +249,11 @@
                 if (data.data[x].type == 'image') {
                     instgramItems.push({
                         url: data.data[x].link,
-                        photoUrl: data.data[x].images.low_resolution.url,
-                        likes: data.data[x].likes.count
+                        photoUrl: data.data[x].images.low_resolution.url
                     });
                 }
             }
             initCarousel();
-        },
-        error: function (data) {
-            
-        }
-    });
-    
-    $.ajax({
-        url: 'https://api.instagram.com/v1/users/self',
-        dataType: 'jsonp',
-        type: 'GET',
-        data: { access_token: token },
-        success: function (data) {
-            followers = data.data.counts.followed_by;
-            
-            $('#instgram-followers').append("<span class='black'>" + followers + "&nbsp;followers</span>")
         },
         error: function (data) {
             
@@ -309,12 +265,11 @@
 
     function changeImage() {
         var next = (++i % $imgs.length);
-        $($imgs.get(next - 1)).fadeOut(500);
-        $($imgs.get(next)).delay(500).fadeIn(500);
+        $($imgs.get(next - 1)).fadeOut(25);
+        $($imgs.get(next)).fadeIn(500);
+        
     }
-    if($imgs.length > 1) {
-        var interval = setInterval(changeImage, 5000);
-    }
+    var interval = setInterval(changeImage, 5000);
 </script>
 
             </main>
