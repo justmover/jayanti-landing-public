@@ -254,6 +254,7 @@ body {
 .contact-container .other-contact-container .catTitle {
     color: #006738;
     font-size: 28px;
+    margin-bottom: 1rem;
 }
 
 .contact-container .other-contact-container .name {
