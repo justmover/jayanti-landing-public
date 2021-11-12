@@ -1,75 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://jayanti.justmove.hk/promotions/%E6%8F%9B%E8%B3%BC%E6%9D%9E%E5%AD%90%E7%BE%8E%E9%A1%94%E6%B6%B2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/promotions/%E8%B3%BC%E7%89%A9%E6%9C%89%E7%A6%AE%E9%80%81/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/promotions/%E6%96%B0%E5%B9%B4%E8%B3%BC%E7%89%A9%E8%B3%9E/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/about/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/contact/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/gdv/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/home/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/promotions/</loc>
     <lastmod>2018-01-22T05:43:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/gdv/gdv/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/contact/contact/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/about/about/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/home/home/</loc>
     <lastmod>2018-01-22T13:43:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jayanti.justmove.hk/tags/</loc>
   </url>
-  
 </urlset>
